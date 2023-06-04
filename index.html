@@ -26,17 +26,26 @@
       </div>
     </section>
     <div class="container">
-      <div class="dropdown is_active">
-      <input id="input1"/></div>
-      <div class="dropdown-menu"><div class="dropdown-content">
-        <a class="dropdown-item">Movie #1</a>
-        <a class="dropdown-item">Movie #2</a>
-        <a class="dropdown-item">Movie #3</a>
+      <div class="columns">
+        <div class="column">
+          <div id="left-autocomplete">          </div>
 
-      </div></div>
-      <div id="movie1"></div>
+            <div id="left-summary"></div>
+        </div>
+        <div class="column">
+          <div id="right-autocomplete">          </div>
+
+            <div id="right-summary"></div>
+        </div> 
+      </div>
+<div class="column is-half notification is-primary tutorial">
+  <h1 class="title">Search for a Movie on both sides</h1>
+  <p class="subtitle">Compare stats from each</p>
+</div>
+
     </div>
     <script src="utils.js"></script>
+    <script src="autocomplete.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
